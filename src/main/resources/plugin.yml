@@ -1,0 +1,35 @@
+name: MidoriCommandLogger
+version: 1.0
+main: midorichan.CommandLogger
+api-version: 1.18
+author: midorichan
+website: https://twitter.com/Midorichaan2525
+
+commands:
+  togglelog:
+    description: Toggle Command Log
+    default: op
+
+permissions:
+  midorilog.*:
+    default: op
+    children:
+      midorilog.command: true
+      midorilog.message: true
+  midorilog.command:
+    default: op
+  midorilog.message:
+    default: op
+    children:
+      midorilog.message.player: true
+      midorilog.message.console: true
+      midorilog.message.rcon: true
+      midorilog.message.cmdblock: true
+  midorilog.message.player:
+    default: op
+  midorilog.message.console:
+    default: op
+  midorilog.message.rcon:
+    default: op
+  midorilog.message.cmdblock:
+    default: op

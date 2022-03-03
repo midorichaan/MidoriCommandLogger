@@ -1,0 +1,24 @@
+#プラグインのチャットプレフィクス
+plugin-prefix: " &2>&a>&r "
+
+#各ログのメッセージ
+
+#プレースホルダ
+# {WORLD}: ワールド名
+# {PLAYER}: プレイヤー名
+# {DISPLAYNAME}: プレイヤーの表示名
+# {UUID}: プレイヤーUUID
+# {X}: X座標
+# {Y}: Y座標
+# {Z}: Z座標
+# {COMMAND}: 実行コマンド
+cmdlog-player: ""
+cmdlog-console: ""
+cmdlog-rcon: ""
+cmdlog-cmdblock: ""
+
+#各ログ有効にするか
+enable-player: true
+enable-console: true
+enable-rcon: true
+enable-cmdblock: true
