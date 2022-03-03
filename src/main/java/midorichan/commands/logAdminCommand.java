@@ -8,7 +8,7 @@ import org.bukkit.entity.Player;
 
 public class logAdminCommand implements CommandExecutor {
 
-    private static CommandLogger plugin = CommandLogger.getInstance();
+    private CommandLogger plugin = CommandLogger.getInstance();
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
