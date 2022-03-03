@@ -12,10 +12,10 @@ plugin-prefix: " &2>&a>&r "
 # {Y}: Y座標
 # {Z}: Z座標
 # {COMMAND}: 実行コマンド
-cmdlog-player: ""
-cmdlog-console: ""
-cmdlog-rcon: ""
-cmdlog-cmdblock: ""
+cmdlog-player: " §a* §7{PLAYER} : {COMMAND}"
+cmdlog-console: " §a* §7CONSOLE : {COMMAND}"
+cmdlog-rcon: " §a* §7RCON : {COMMAND}"
+cmdlog-cmdblock: " §a* §7CMDBLOCK : {COMMAND} [{WORLD} - X: {X} Y: {Y} Z: {Z}]"
 
 #各ログ有効にするか
 enable-player: true
