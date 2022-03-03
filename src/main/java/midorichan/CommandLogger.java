@@ -14,7 +14,7 @@ import java.util.UUID;
 
 public class CommandLogger extends JavaPlugin {
 
-    public static List<UUID> logging = new ArrayList<UUID>();
+    public static List<UUID> logging = new ArrayList<>();
 
     private static FileConfiguration config = null;
     private static CommandLogger plugin = null;
@@ -32,7 +32,11 @@ public class CommandLogger extends JavaPlugin {
     }
 
     public static boolean isLog(Player p) {
-        return logging.contains(p.getUniqueId());
+        if (logging.contains(p.getUniqueId())) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public static boolean toggleLog(Player p) {
