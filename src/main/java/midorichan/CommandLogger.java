@@ -7,20 +7,21 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
 public class CommandLogger extends JavaPlugin {
 
+    public static List<UUID> logging = new ArrayList<UUID>();
+
     private static FileConfiguration config = null;
     private static CommandLogger plugin = null;
-    private static List<UUID> logging;
 
     public static CommandLogger getInstance() {
         return plugin;
     }
-
     public static FileConfiguration getConf() {
         return config;
     }
