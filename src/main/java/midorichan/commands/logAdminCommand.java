@@ -20,9 +20,9 @@ public class logAdminCommand implements CommandExecutor {
 
                 if (p.hasPermission("midorilog.command")) {
                     if (args.length == 0) {
-                        boolean val = plugin.toggleLog(p);
+                        plugin.toggleLog(p);
 
-                        if (val) {
+                        if (plugin.isLog(p)) {
                             p.sendMessage(plugin.getPrefix() + "コマンドログを有効にしました");
                         } else {
                             p.sendMessage(plugin.getPrefix() + "コマンドログを無効にしました");

@@ -39,13 +39,11 @@ public class CommandLogger extends JavaPlugin {
         }
     }
 
-    public static boolean toggleLog(Player p) {
+    public static void toggleLog(Player p) {
         if (isLog(p)) {
             logging.add(p.getUniqueId());
-            return true;
         } else {
             logging.remove(p.getUniqueId());
-            return false;
         }
     }
 
