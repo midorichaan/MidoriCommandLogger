@@ -8,13 +8,12 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
 public class CommandLogger extends JavaPlugin {
 
-    public static List<UUID> logging = new ArrayList<>();
+    private static final List<UUID> logging = new ArrayList<>();
 
     private static FileConfiguration config = null;
     private static CommandLogger plugin = null;
@@ -32,11 +31,7 @@ public class CommandLogger extends JavaPlugin {
     }
 
     public static boolean isLog(Player p) {
-        if (logging.contains(p.getUniqueId())) {
-            return true;
-        } else {
-            return false;
-        }
+        return logging.contains(p.getUniqueId());
     }
 
     public void toggleLog(Player p) {
